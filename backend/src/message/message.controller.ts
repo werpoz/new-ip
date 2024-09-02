@@ -3,7 +3,7 @@ import { MessageService } from './message.service';
 import { ApiTags, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { MessageDto } from './dto/message.dto';
 
-@ApiTags('messages') // Tag for Swagger
+@ApiTags('messages')
 @Controller('messages')
 export class MessageController {
   constructor(private readonly messageService: MessageService) {}

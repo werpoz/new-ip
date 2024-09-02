@@ -34,7 +34,7 @@ export class ChatGateway implements OnGatewayConnection, OnGatewayDisconnect {
       if (!user) {
         throw new UnauthorizedException();
       }
-      client.data.user = user; // Almacenar el usuario en la conexión del cliente
+      client.data.user = user;
       console.log(`Client connected: ${client.id}, user: ${user.email}`);
     } catch (e) {
       console.error('Unauthorized:', e.message);
